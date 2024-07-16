@@ -21,7 +21,7 @@ public class DepartmentController {
 
   @PostMapping("/")
   public Department add(@RequestBody Department department) {
-    LOGGER.info("Department add: {}" + department);
+    LOGGER.info("Department add: {}", department);
     return repository.addDepartment(department);
   }
 
@@ -33,7 +33,7 @@ public class DepartmentController {
 
   @GetMapping("/{id}")
   public Department findById(@PathVariable Long id) {
-    LOGGER.info("Fetching department by id: {}" + id);
+    LOGGER.info("Fetching department by id: {}", id);
     return repository.findById(id);
   }
 }

@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public class DepartmentRepository {
 
-  private List<Department> departments = new ArrayList<>();
+  private final List<Department> departments = new ArrayList<>();
 
 //  Add new department
   public Department addDepartment(Department department) {
